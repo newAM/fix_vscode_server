@@ -18,6 +18,7 @@ This commits a nix sin and creates impure paths to avoid using an `FhsUserEnv`.
 
 Please note that this script is a hack.  Do not expect a polished experience.
 
-1. Run VSCode on the client, and connect to a remote host, wait for install to fail.
-2. Run this script on the server.
-3. Re-connect from the client VSCode and it should work now.
+1. Add the required node version for VSCode to `environment.systemPackages` on the server, currently this is `nodejs-16_x`.
+2. Run VSCode on the client, and connect to a remote host, wait for install to fail.
+3. Run this script on the server.
+4. Re-connect from the client VSCode and it should work now.
